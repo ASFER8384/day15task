@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <div id="container"><h1>Form</h1>
+    
+    
+    <div id="temp">
+        <label for="" id="fname">First Name :</label>
+        <input type="text" id="fbox">
+        <label for="" id="lname"> Last Name :</label>
+        <input type="text" name="" id="lbox"><br>
+        <label for="" class="labe " >Address :</label>
+        <input type="Address" class="inp address"  name="" id="abox"><br>
+        <label for=""class="labe">Pincode :</label>
+        <input type="Pincode"class="inp" name="" id="pbox"><br>
+        <label for=""class="labe">Gender :</label>
+        <input type="Gender"class="inp" name="" id="gbox"><br>
+        <label for=""class="labe">Food :</label>
+        <input type="Food"class="inp" name="" id="fobox"><br>
+        <label for=""class="labe">State :</label>
+        <input type="State"class="inp" name="" id="sbox"><br>
+        <label for=""class="labe">Country :</label>
+        <input type="State"class="inp" Country="" id="cbox"><br>
+        <button onclick="myfun()" id="btn">Submit</button>
+    </div>
+    
+    <table id="display">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Pincode</th>
+            <th>Gender</th>
+            <th>Food</th>
+            <th>State</th>
+            <th>Country</th>
+        </tr>
+    </table>
+    <script>
+        var submit=document.getElementById("btn")
+        function myfun(){
+            let fname=document.getElementById("fbox").value
+            let lname=document.getElementById("lbox").value
+            let address=document.getElementById("abox").value
+            let pincode=document.getElementById("pbox").value
+            let gender=document.getElementById("gbox").value
+            let food=document.getElementById("fobox").value
+            let state=document.getElementById("sbox").value
+            let country=document.getElementById("cbox").value
+            
+            var row=1;
+            var display =document.getElementById("display")
+
+            let newRow=display.insertRow(row)
+            let cell1=newRow.insertCell(0)
+            let cell2=newRow.insertCell(1)
+            let cell3=newRow.insertCell(2)
+            let cell4=newRow.insertCell(3)
+            let cell5=newRow.insertCell(4)
+            let cell6=newRow.insertCell(5)
+            let cell7=newRow.insertCell(6)
+            let cell8=newRow.insertCell(7)
+
+            cell1.innerHTML=fname;
+            cell2.innerHTML=lname;
+            cell3.innerHTML=address;
+            cell4.innerHTML=pincode;
+            cell5.innerHTML=gender;
+            cell6.innerHTML=food;
+            cell7.innerHTML=state;
+            cell8.innerHTML=country;
+          
+        }
+    </script>
+    </div>
+   
+    
+</body>
+</html>

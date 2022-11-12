@@ -1,0 +1,88 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#container{
+    margin: auto;
+    height: 50rem;
+    width: 50rem;
+    /* background-color: aquamarine; */
+    margin-top: 5%;
+   
+}
+h1{
+    text-align: center;
+}
+#temp{
+    width: 40rem;
+    height: 40rem;
+    /* border: 1px solid black; */
+    border: 1px solid black;
+   padding: 15px;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 30px;
+   
+    
+}
+/* f and l box and input */
+#fname{
+    font-size: 20px;
+}
+#lname{
+    font-size: 20px;
+    margin-left: 5px;
+
+}
+#fbox{
+    height: 25px;
+    width: 25%;
+}
+#lbox{
+    height: 25px;
+    margin-left: 5px;
+    width: 25%;
+}
+.inp{
+  font-size: 20px;
+    padding: 10px;
+   width: 13%;
+}
+.labe{
+    font-size: 20px;
+    
+}
+label,input{
+    margin-bottom: 50px;
+    width: 80px;
+    font-size: 10px;
+    height: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+th{
+    padding: 25px;
+    
+}
+th,table,td{
+    border: 1px solid red;
+    margin-top: 5%;
+    border-collapse: collapse;
+}
+#display{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10%;
+    margin-left: -30px;
+}
+.address{
+    
+    height: 10px;
+    width: 45%;
+}
+#btn{
+    padding: 5px;
+}
+#btn:hover{
+    color: red;
+}
